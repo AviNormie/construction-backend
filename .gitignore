@@ -23,7 +23,6 @@ pnpm-debug.log*
 .DS_Store
 
 # VSCode settings
-.vscode/
 
 # TypeScript
 *.tsbuildinfo

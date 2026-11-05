@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx src/server.ts",
+    "dev": "node init && tsx src/server.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "prepare": "husky install",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "node init && tsc",
+    "start": "node init && node dist/server.js"
   },
   "dependencies": {
     "@prisma/client": "^6.9.0",
